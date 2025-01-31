@@ -6,13 +6,14 @@ Anonymous Chat Cloudflare Worker Telegram Bot
 3. Enter the database and open the **console**.
 4.
 **Copy the code below:**
-   ```sql
+   ```
 CREATE TABLE users (
     "id" integer PRIMARY KEY,
     "telegram_user_id" text,
     "rkey" text,
     "target_user" text
 );
+```
 
 5. Then, go to the Worker and in the **Settings**, under **Bindings**, bind the database you created with the name `db`.  
 6. Create a bot on Telegram using **@BotFather**.  
